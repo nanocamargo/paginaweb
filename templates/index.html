@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Homegrown | Diseño, construcción y remodelación</title>
+  <meta name="description" content="Diseño, construcción y remodelación con acompañamiento profesional." />
+
+  <!-- Tipos (opcional). Si tu PC corporativo bloquea Google Fonts, bórralo y queda con system font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+  <!-- Topbar -->
+  <header id="siteHeader" class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">Homegrown</a>
+
+      <nav class="menu" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-ghost"
+           href="https://wa.me/573001112233?text=Hola%20quiero%20una%20cotizaci%C3%B3n"
+           target="_blank" rel="noopener">WhatsApp</a>
+
+        <a class="btn btn-primary" href="tel:+573001112233">Llamar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero con imagen de fondo -->
+  <main id="inicio" class="hero hero-bg">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Diseño · Construcción · Remodelación</p>
+
+        <h1>Hacemos que tu espacio se adapte a tu estilo.</h1>
+
+        <p class="lead">
+          Acompañamiento profesional de principio a fin: diagnóstico, propuesta, presupuesto y ejecución.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contacto">Solicitar cotización</a>
+          <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+        </div>
+
+        <div class="badges" role="list" aria-label="Beneficios">
+          <span role="listitem">✅ Cotización rápida</span>
+          <span role="listitem">✅ Transparencia</span>
+          <span role="listitem">✅ Garantía</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sección tipo Clove: bloque con imagen + texto -->
+  <section class="band">
+    <div class="container split">
+      <div class="split-media">
+        <img src="{{ url_for('static', filename='img/hero.jpg') }}" alt="Detalle de proyecto" loading="lazy">
+      </div>
+      <div class="split-copy">
+        <h2>Un proceso claro, sin sorpresas</h2>
+        <p class="muted">
+          Definimos alcance, tiempos y presupuesto. Te compartimos avances y decisiones clave durante todo el proyecto.
+        </p>
+        <ul class="list">
+          <li>Levantamiento y diagnóstico</li>
+          <li>Propuesta + presupuesto</li>
+          <li>Cronograma y ejecución</li>
+        </ul>
+        <a class="link" href="#contacto">Hablar con un asesor →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Servicios</h2>
+        <p class="muted">Soluciones a la medida para hogar, negocios y oficinas.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Diseño y planos</h3>
+          <p>Propuestas, renders y planos técnicos para tomar decisiones con claridad.</p>
+          <a class="link" href="#contacto">Cotizar →</a>
+        </article>
+
+        <article class="card">
+          <h3>Remodelación</h3>
+          <p>Cocinas, baños, salas, fachadas y acabados con control de calidad.</p>
+          <a class="link" href="#contacto">Cotizar →</a>
+        </article>
+
+        <article class="card">
+          <h3>Construcción</h3>
+          <p>Dirección de obra y ejecución con cronograma, materiales y seguimiento.</p>
+          <a class="link" href="#contacto">Cotizar →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="section alt">
+    <div class="container two-col">
+      <div>
+        <h2>Sobre nosotros</h2>
+        <p class="muted">
+          Somos un equipo enfocado en resultados: diseño funcional, costos claros y ejecución responsable.
+        </p>
+        <div class="metrics">
+          <div class="metric">
+            <div class="metric-num">+X</div>
+            <div class="metric-label">proyectos</div>
+          </div>
+          <div class="metric">
+            <div class="metric-num">+X</div>
+            <div class="metric-label">años</div>
+          </div>
+          <div class="metric">
+            <div class="metric-num">X</div>
+            <div class="metric-label">ciudades</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="quote-card">
+        <p class="quote">
+          “Excelente acompañamiento: cumplieron tiempos y el resultado quedó impecable”.
+        </p>
+        <p class="muted small">— Cliente (opcional)</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta-box">
+      <div>
+        <h2>¿Listo para empezar?</h2>
+        <p class="muted">Cuéntanos tu idea y te respondemos con una ruta clara para ejecutarla.</p>
+      </div>
+      <a class="btn btn-primary" href="#contacto">Reservar una consulta</a>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Contacto</h2>
+        <p class="muted">Escríbenos o llámanos. Respondemos rápido.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Información</h3>
+          <p><strong>Tel:</strong> <a href="tel:+573001112233">+57 300 111 2233</a></p>
+          <p><strong>WhatsApp:</strong>
+            <a href="https://wa.me/573001112233?text=Hola%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">Abrir chat</a>
+          </p>
+          <p><strong>Email:</strong> <a href="mailto:contacto@tuempresa.com">contacto@tuempresa.com</a></p>
+          <p><strong>Ciudad:</strong> Tu ciudad</p>
+        </div>
+
+        <form class="card" method="post" action="{{ url_for('contacto') }}">
+          <h3>Déjanos un mensaje</h3>
+
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required />
+
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" type="tel" name="telefono" placeholder="+57..." />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Enviar</button>
+          <p class="small muted">Luego conectamos esto a email/CRM.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p class="small muted">© <span id="year"></span> Homegrown. Todos los derechos reservados.</p>
+      <div class="social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Año en footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Header transparente en hero + sólido al hacer scroll
+    const header = document.getElementById("siteHeader");
+    function onScroll() {
+      const y = window.scrollY || document.documentElement.scrollTop;
+      if (y > 30) header.classList.add("scrolled");
+      else header.classList.remove("scrolled");
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  </script>
+</body>
+</html>
