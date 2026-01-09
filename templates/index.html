@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Homegrown | Diseño, construcción y remodelación</title>
-  <meta name="description" content="Diseño, construcción y remodelación con acompañamiento profesional." />
+  <title>HGlazing | Shop Drawings, Estimating & Coordination</title>
+  <meta name="description" content="HGlazing provides shop drawings, estimating, and coordination support for glazing and façade projects across Florida." />
 
-  <!-- Tipos (opcional). Si tu PC corporativo bloquea Google Fonts, bórralo y queda con system font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,132 +15,215 @@
 
 <body>
   <!-- Topbar -->
-  <header id="siteHeader" class="topbar">
+  <header class="topbar" id="topbar">
     <div class="container nav">
-      <a class="brand" href="#inicio" aria-label="Ir al inicio">Homegrown</a>
+      <a class="brand" href="#home" aria-label="Go to home">HGlazing</a>
 
-      <nav class="menu" aria-label="Navegación principal">
-        <a href="#servicios">Servicios</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
+      <nav class="menu" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Success stories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
 
       <div class="nav-cta">
-        <a class="btn btn-ghost"
-           href="https://wa.me/573001112233?text=Hola%20quiero%20una%20cotizaci%C3%B3n"
-           target="_blank" rel="noopener">WhatsApp</a>
-
-        <a class="btn btn-primary" href="tel:+573001112233">Llamar</a>
+        <a class="btn btn-ghost" href="mailto:Contact@hgrowninv.com">Email</a>
+        <a class="btn btn-primary" href="tel:+18665280938">Call</a>
       </div>
     </div>
   </header>
 
-  <!-- Hero con imagen de fondo -->
-  <main id="inicio" class="hero hero-bg">
+  <!-- HERO -->
+  <main id="home" class="hero hero-bg">
+    <div class="hero-overlay" aria-hidden="true"></div>
+
     <div class="container hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Diseño · Construcción · Remodelación</p>
+        <p class="eyebrow">Shop Drawings · Estimating · Coordination</p>
 
-        <h1>Hacemos que tu espacio se adapte a tu estilo.</h1>
+        <h1>Support for glazing projects that can’t afford rework.</h1>
 
         <p class="lead">
-          Acompañamiento profesional de principio a fin: diagnóstico, propuesta, presupuesto y ejecución.
+          Clear drawings, reliable numbers, and coordination that prevents issues before they reach the field.
+          Built for teams that need speed, accuracy, and accountability.
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contacto">Solicitar cotización</a>
-          <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+          <a class="btn btn-primary" href="#contact">Request a quote</a>
+          <a class="btn btn-ghost" href="#services">View services</a>
         </div>
 
-        <div class="badges" role="list" aria-label="Beneficios">
-          <span role="listitem">✅ Cotización rápida</span>
-          <span role="listitem">✅ Transparencia</span>
-          <span role="listitem">✅ Garantía</span>
+        <div class="badges" role="list" aria-label="Highlights">
+          <span role="listitem">✅ Fast turnaround</span>
+          <span role="listitem">✅ Clear deliverables</span>
+          <span role="listitem">✅ Coordination-first</span>
         </div>
       </div>
     </div>
+
+    <div class="hero-bottom-fade" aria-hidden="true"></div>
   </main>
 
-  <!-- Sección tipo Clove: bloque con imagen + texto -->
-  <section class="band">
-    <div class="container split">
-      <div class="split-media">
-        <img src="{{ url_for('static', filename='img/hero.jpg') }}" alt="Detalle de proyecto" loading="lazy">
-      </div>
-      <div class="split-copy">
-        <h2>Un proceso claro, sin sorpresas</h2>
-        <p class="muted">
-          Definimos alcance, tiempos y presupuesto. Te compartimos avances y decisiones clave durante todo el proyecto.
-        </p>
-        <ul class="list">
-          <li>Levantamiento y diagnóstico</li>
-          <li>Propuesta + presupuesto</li>
-          <li>Cronograma y ejecución</li>
-        </ul>
-        <a class="link" href="#contacto">Hablar con un asesor →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Servicios -->
-  <section id="servicios" class="section">
+  <!-- SERVICES -->
+  <section id="services" class="section">
     <div class="container">
       <div class="section-head">
-        <h2>Servicios</h2>
-        <p class="muted">Soluciones a la medida para hogar, negocios y oficinas.</p>
+        <p class="kicker">What we do</p>
+        <h2>Services</h2>
+        <p class="muted">
+          Practical deliverables that keep your project moving: drawings, pricing, and coordination.
+        </p>
+      </div>
+
+      <div class="cards cards-services">
+        <!-- Shop Drawings -->
+        <article class="card service-card">
+          <div class="service-top">
+            <div class="service-icon" aria-hidden="true">📐</div>
+            <h3>Shop Drawings</h3>
+          </div>
+          <p>
+            Buildable drawing sets for glazing systems with clean revisions and submission-ready packages.
+          </p>
+          <ul class="list">
+            <li>Plans, elevations, sections & details</li>
+            <li>Material callouts, dimensions, notes</li>
+            <li>Revision tracking + clean submittal sets</li>
+            <li>Interface detailing (as applicable)</li>
+          </ul>
+          <p class="muted small">Outcome: fewer RFIs, fewer clashes, faster approvals.</p>
+          <a class="link" href="#contact">Get started →</a>
+        </article>
+
+        <!-- Estimating -->
+        <article class="card service-card">
+          <div class="service-top">
+            <div class="service-icon" aria-hidden="true">🧾</div>
+            <h3>Estimating</h3>
+          </div>
+          <p>
+            Accurate takeoffs and scope clarity so you can bid confidently and protect margins.
+          </p>
+          <ul class="list">
+            <li>Quantity takeoffs & breakdowns</li>
+            <li>Inclusions / exclusions & scope notes</li>
+            <li>Budget pricing / bid support</li>
+            <li>Value engineering options (if requested)</li>
+          </ul>
+          <p class="muted small">Outcome: cleaner proposals and fewer surprises.</p>
+          <a class="link" href="#contact">Request a quote →</a>
+        </article>
+
+        <!-- Coordination -->
+        <article class="card service-card">
+          <div class="service-top">
+            <div class="service-icon" aria-hidden="true">🧩</div>
+            <h3>Coordination</h3>
+          </div>
+          <p>
+            Trade coordination support that reduces rework and helps installs stay smooth.
+          </p>
+          <ul class="list">
+            <li>Interface checks with structure, MEP & finishes</li>
+            <li>RFI support & issue resolution</li>
+            <li>Submittal coordination & revision management</li>
+            <li>Field dimension review workflow (as needed)</li>
+          </ul>
+          <p class="muted small">Outcome: fewer delays and cleaner handoffs.</p>
+          <a class="link" href="#contact">Talk to us →</a>
+        </article>
+      </div>
+
+      <!-- Extra: deliverables / scope (adds credibility + SEO) -->
+      <div class="section-head" style="margin-top: 34px;">
+        <h3>What you receive</h3>
+        <p class="muted">Clear outputs your team can use immediately.</p>
       </div>
 
       <div class="cards">
         <article class="card">
-          <h3>Diseño y planos</h3>
-          <p>Propuestas, renders y planos técnicos para tomar decisiones con claridad.</p>
-          <a class="link" href="#contacto">Cotizar →</a>
+          <h3>Submission-ready packages</h3>
+          <p class="muted">Organized sets with revision control and clean markups for faster reviews.</p>
         </article>
-
         <article class="card">
-          <h3>Remodelación</h3>
-          <p>Cocinas, baños, salas, fachadas y acabados con control de calidad.</p>
-          <a class="link" href="#contacto">Cotizar →</a>
+          <h3>Scope clarity</h3>
+          <p class="muted">Inclusions/exclusions and assumptions documented to reduce disputes and change noise.</p>
         </article>
-
         <article class="card">
-          <h3>Construcción</h3>
-          <p>Dirección de obra y ejecución con cronograma, materiales y seguimiento.</p>
-          <a class="link" href="#contacto">Cotizar →</a>
+          <h3>Coordination notes</h3>
+          <p class="muted">Practical checks across interfaces to prevent clashes before installation.</p>
+        </article>
+      </div>
+
+      <p class="muted" style="margin-top: 14px;">
+        <strong>Typical scopes:</strong> storefront, curtain wall, entrances, glass handrails, mirrors & specialty glazing (as applicable).
+      </p>
+    </div>
+  </section>
+
+  <!-- SUCCESS STORIES -->
+  <section id="work" class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Proven results</p>
+        <h2>Success stories</h2>
+        <p class="muted">Selected projects where our support helped teams move faster with fewer issues.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Maxwell</h3>
+          <p class="muted">Coordination and drawing support to reduce field conflicts and speed approvals.</p>
+        </article>
+        <article class="card">
+          <h3>Telegraph</h3>
+          <p class="muted">Estimating + scope clarity to support bid strategy and early decision-making.</p>
+        </article>
+        <article class="card">
+          <h3>AC Folsom</h3>
+          <p class="muted">Shop drawings and revision management to keep submittals consistent.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Nosotros -->
-  <section id="nosotros" class="section alt">
+  <!-- ABOUT -->
+  <section id="about" class="section">
     <div class="container two-col">
       <div>
-        <h2>Sobre nosotros</h2>
+        <p class="kicker">About</p>
+        <h2>Built on clarity and accountability</h2>
         <p class="muted">
-          Somos un equipo enfocado en resultados: diseño funcional, costos claros y ejecución responsable.
+          We’re a Florida-based team focused on practical deliverables and clear communication.
+          Our goal is simple: reduce rework, align trades, and help projects finish strong.
         </p>
+
         <div class="metrics">
           <div class="metric">
-            <div class="metric-num">+X</div>
-            <div class="metric-label">proyectos</div>
+            <div class="metric-num">15+</div>
+            <div class="metric-label">years</div>
           </div>
           <div class="metric">
-            <div class="metric-num">+X</div>
-            <div class="metric-label">años</div>
+            <div class="metric-num">50+</div>
+            <div class="metric-label">projects</div>
           </div>
           <div class="metric">
-            <div class="metric-num">X</div>
-            <div class="metric-label">ciudades</div>
+            <div class="metric-num">Florida</div>
+            <div class="metric-label">USA</div>
           </div>
         </div>
+
+        <p class="muted" style="margin-top: 14px;">
+          <strong>Service areas:</strong>
+          Miami, Tampa, Orlando, Jacksonville, Fort Lauderdale, West Palm Beach, Naples, Sarasota.
+        </p>
       </div>
 
       <aside class="quote-card">
         <p class="quote">
-          “Excelente acompañamiento: cumplieron tiempos y el resultado quedó impecable”.
+          “Clear drawings, reliable numbers, and coordination that prevents issues before they hit the field.”
         </p>
-        <p class="muted small">— Cliente (opcional)</p>
+        <p class="muted small">— HGlazing Team</p>
       </aside>
     </div>
   </section>
@@ -150,46 +232,53 @@
   <section class="cta">
     <div class="container cta-box">
       <div>
-        <h2>¿Listo para empezar?</h2>
-        <p class="muted">Cuéntanos tu idea y te respondemos con una ruta clara para ejecutarla.</p>
+        <h2>Have plans or a scope?</h2>
+        <p class="muted">Send details and we’ll respond with next steps.</p>
       </div>
-      <a class="btn btn-primary" href="#contacto">Reservar una consulta</a>
+      <a class="btn btn-primary" href="#contact">Contact us</a>
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section id="contacto" class="section">
+  <!-- CONTACT -->
+  <section id="contact" class="section">
     <div class="container">
       <div class="section-head">
-        <h2>Contacto</h2>
-        <p class="muted">Escríbenos o llámanos. Respondemos rápido.</p>
+        <p class="kicker">Contact</p>
+        <h2>Let’s talk</h2>
+        <p class="muted">Email or call. We respond quickly.</p>
       </div>
 
       <div class="contact-grid">
         <div class="card">
-          <h3>Información</h3>
-          <p><strong>Tel:</strong> <a href="tel:+573001112233">+57 300 111 2233</a></p>
-          <p><strong>WhatsApp:</strong>
-            <a href="https://wa.me/573001112233?text=Hola%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">Abrir chat</a>
+          <h3>Contact info</h3>
+          <p><strong>Contacts:</strong> Diana Carolina Bohorquez · Juan Carlos Bohorquez</p>
+          <p><strong>Phone:</strong> <a href="tel:+18665280938">+1 (866) 528-0938</a></p>
+          <p><strong>Email:</strong> <a href="mailto:Contact@hgrowninv.com">Contact@hgrowninv.com</a></p>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px;">
+            <a class="btn btn-primary" href="mailto:Contact@hgrowninv.com">Email us</a>
+            <a class="btn btn-ghost" href="tel:+18665280938">Call now</a>
+          </div>
+
+          <p class="muted small" style="margin-top: 12px;">
+            Location: Florida, USA · Serving Miami, Tampa, Orlando and more.
           </p>
-          <p><strong>Email:</strong> <a href="mailto:contacto@tuempresa.com">contacto@tuempresa.com</a></p>
-          <p><strong>Ciudad:</strong> Tu ciudad</p>
         </div>
 
         <form class="card" method="post" action="{{ url_for('contacto') }}">
-          <h3>Déjanos un mensaje</h3>
+          <h3>Send a message</h3>
 
-          <label for="nombre">Nombre</label>
-          <input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required />
+          <label for="name">Name</label>
+          <input id="name" type="text" name="nombre" placeholder="Your name" required />
 
-          <label for="telefono">Teléfono</label>
-          <input id="telefono" type="tel" name="telefono" placeholder="+57..." />
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" name="telefono" placeholder="+1..." />
 
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas" required></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="mensaje" rows="4" placeholder="Tell us about your project" required></textarea>
 
-          <button class="btn btn-primary" type="submit">Enviar</button>
-          <p class="small muted">Luego conectamos esto a email/CRM.</p>
+          <button class="btn btn-primary" type="submit">Send</button>
+          <p class="small muted">Next step: we can connect this to email/CRM.</p>
         </form>
       </div>
     </div>
@@ -197,7 +286,7 @@
 
   <footer class="footer">
     <div class="container footer-row">
-      <p class="small muted">© <span id="year"></span> Homegrown. Todos los derechos reservados.</p>
+      <p class="small muted">© <span id="year"></span> HGlazing. All rights reserved.</p>
       <div class="social">
         <a href="#" aria-label="Instagram">Instagram</a>
         <a href="#" aria-label="Facebook">Facebook</a>
@@ -207,18 +296,15 @@
   </footer>
 
   <script>
-    // Año en footer
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Header transparente en hero + sólido al hacer scroll
-    const header = document.getElementById("siteHeader");
-    function onScroll() {
-      const y = window.scrollY || document.documentElement.scrollTop;
-      if (y > 30) header.classList.add("scrolled");
-      else header.classList.remove("scrolled");
-    }
-    window.addEventListener("scroll", onScroll, { passive: true });
+    const topbar = document.getElementById("topbar");
+    const onScroll = () => {
+      if (window.scrollY > 16) topbar.classList.add("scrolled");
+      else topbar.classList.remove("scrolled");
+    };
     onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
   </script>
 </body>
 </html>
